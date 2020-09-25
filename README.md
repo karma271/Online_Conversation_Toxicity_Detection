@@ -57,14 +57,10 @@ Various data augmentation techniques were employed to minimize the effects of im
  
 Alternatively, [SMOTE](https://arxiv.org/pdf/1106.1813.pdf) and class weighting are also available. Due to interdependence between classes it was challenging to incorporate these techniques successfully.
 
-|     Figure 3: Post Augmentation Toxic class distribution     |      |
-| :----------------------------------------------------------: | ---- |
-| <img src="./assets/images/003_augmented_toxicity_classification.png" width='600'> |      |
+|     Figure 3: Post Augmentation Toxic class distribution     |  
+| :----------------------------------------------------------: | 
+| <img src="./assets/images/003_augmented_toxicity_classification.png" width='400'> |
 
-
-
-
-GRAMMAR CHECK!!!
 
 ## Model Selection
 
@@ -140,7 +136,7 @@ To demonstrate the performance and utility of the trained classifier models a we
 
 ## Conclusion
 
-A binary classifier with deep neural architecture was successfully trained to perform better than the baseline classical model with 90% recall. The best binary classifier was achieved using BiLSTM with attention and FastText as pre-trained embeddings. The best recall and $F_1$ score was 97.37% and 91.99% respectively. Similarly, a reasonable multi-label classifier to classify the toxicity level was also successfully engineered to give the average recall and F-1 score of 88.58% and 83.91% respectively. Due to the natural interdependence of toxic characteristics, it was challenging to fully correct for imbalanced class. A more robust balanced dataset that captures subtleties and nuances of human opinion has the potential to mitigate these problems and help improve the performance of the model further.
+A binary classifier with deep neural architecture was successfully trained to perform better than the baseline classical model with 90% recall. The best binary classifier was achieved using BiLSTM with attention and FastText as pre-trained embeddings. The best recall and F-1 score was 97.37% and 91.99% respectively. Similarly, a reasonable multi-label classifier to classify the toxicity level was also successfully engineered to give the average recall and F-1 score of 88.58% and 83.91% respectively. Due to the natural interdependence of toxic characteristics, it was challenging to fully correct for imbalanced class. A more robust balanced dataset that captures subtleties and nuances of human opinion has the potential to mitigate these problems and help improve the performance of the model further.
 
 
 ## Future Considerations
@@ -170,7 +166,7 @@ This meaningful work to help mitigate the problem of online toxicity that the au
 
 | Directory                                                    | Filename                               | Description                                                  |
 | ------------------------------------------------------------ | -------------------------------------- | ------------------------------------------------------------ |
-| [src](https://git.generalassemb.ly/karma-DSI/capstone_project/tree/master/src) | `001_Preprocessing.ipynb`              | CODE: Cleaning raw data                                      |
+| [src](./src) | `001_Preprocessing.ipynb`              | CODE: Cleaning raw data                                      |
 |                                                              | `002_EDA.ipynb`                        | CODE: Exploratory Data Analysis                              |
 |                                                              | `003_Data_Augmentaion.ipynb`           | CODE: Minimizing class imbalance with data augmentation      |
 |                                                              | `004_Classical_Models_Benchmark.ipynb` | CODE: Preliminary classical model benchmarks                 |
@@ -180,9 +176,9 @@ This meaningful work to help mitigate the problem of online toxicity that the au
 |                                                              | `008_BiLSTM_MULTILABEL.py`             | CODE: BiLSTM model for multilabel classifier                 |
 |                                                              | `009_BiLSTM_ATTENTION_BINARY.py`       | CODE: BiLSTM with Attention model for binary classifier      |
 |                                                              | `010_BiLSTM_ATTENTION_MULTILABEL.py`   | CODE: BiLSTM with Attention model for multilabel classifier  |
-| [raw_data](https://git.generalassemb.ly/karma-DSI/capstone_project/tree/master/assets/data/jigsaw_data) | `test.csv.zip`                         | DATA: raw data from [civil comment corpus](https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge/data) |
+| [raw_data](./assets/data/jigsaw_data) | `test.csv.zip`                         | DATA: raw data from [civil comment corpus](https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge/data) |
 |                                                              | `train_csv.zip`                        | DATA: raw data from [civil comment corpus](https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge/data) |
-| [app](https://git.generalassemb.ly/karma-DSI/capstone_project/tree/master/src/App) |                                        | APP: Flask app directory                                     |
-| [images](https://git.generalassemb.ly/karma-DSI/capstone_project/tree/master/assets/images) |                                        | Images for README                                            |
-| [slide deck](https://git.generalassemb.ly/karma-DSI/capstone_project/tree/master/Slide_Deck _Prasoon_Karmacharya.pdf) | `Slide_Deck _Prasoon_Karmacharya.pdf ` | Presentation Slide Deck                                      |
+| [app](./src/App) |                                        | APP: Flask app directory                                     |
+| [images](./assets/images) |                                        | Images for README                                            |
+| Slide Deck | `Slide_Deck _Prasoon_Karmacharya.pdf ` | Presentation Slide Deck                    |
 
