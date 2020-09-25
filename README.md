@@ -57,10 +57,13 @@ Various data augmentation techniques were employed to minimize the effects of im
  
 Alternatively, [SMOTE](https://arxiv.org/pdf/1106.1813.pdf) and class weighting are also available. Due to interdependence between classes it was challenging to incorporate these techniques successfully.
 
-|     Figure 3: Post Augmentation Toxic class distribution     |      |
-| :----------------------------------------------------------: | ---- |
-| <img src="./assets/images/003_augmented_toxicity_classification.png" width='400'> |   |
-
+<p align="center">
+    
+|     Figure 3: Post Augmentation Toxic class distribution     |   
+| :----------------------------------------------------------: | 
+| <img src="./assets/images/003_augmented_toxicity_classification.png" width='400'> | 
+    
+</p>
 
 ## Model Selection
 
@@ -68,11 +71,13 @@ Alternatively, [SMOTE](https://arxiv.org/pdf/1106.1813.pdf) and class weighting 
 
 Classical machine learning algorithms like Logistic Regression, Multinomial Naive Bayes, Stochastic Gradient Descent, and Support Vector Classifier were used as a benchmark and preliminary models in this project. Although classical models did perform well on binary classification, it severely struggled to classify multi-label classes. This can be attributed to limitation of classical models to learn the interdependence of labels from a very imbalanced class. In order to circumvent this problem various advanced deep neural network architectures were applied to the task of multi-label toxicity classification.
 
+<p align="center">
+    
+|       Figure 4: Classical Model Benchmark Performance        |      
+| :----------------------------------------------------------: | 
+| ![Classical Model Benchmark](./assets/images/011_Classical_Model_Performance_Summary.png) |     
 
-|       Figure 4: Classical Model Benchmark Performance        |      |
-| :----------------------------------------------------------: | ---- |
-| ![Classical Model Benchmark](./assets/images/011_Classical_Model_Performance_Summary.png) |      |
-
+</p>
 
 ### Deep Neural Network 
 
