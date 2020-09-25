@@ -57,9 +57,9 @@ Various data augmentation techniques were employed to minimize the effects of im
  
 Alternatively, [SMOTE](https://arxiv.org/pdf/1106.1813.pdf) and class weighting are also available. Due to interdependence between classes it was challenging to incorporate these techniques successfully.
 
-|     Figure 3: Post Augmentation Toxic class distribution     |  
-| :----------------------------------------------------------: | 
-| <img src="./assets/images/003_augmented_toxicity_classification.png" width='400'> |
+|     Figure 3: Post Augmentation Toxic class distribution     |      |
+| :----------------------------------------------------------: | ---- |
+| <img src="./assets/images/003_augmented_toxicity_classification.png" width='400'> |   |
 
 
 ## Model Selection
